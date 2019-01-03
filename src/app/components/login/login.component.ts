@@ -25,10 +25,9 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log(this.loginForm.value);
-    this.authService.login(this.loginForm.value)
-    // .subscribe(() => console.log('It Works!'));
-    // this.authService.login(this.loginForm.value);
+    if(this.loginForm.value.email == "atyler@gmail.com" && this.loginForm.value.password == "test"){
+      localStorage.setItem('id_token', "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImF0eWxlckBnbWFpbC5jb20iLCJpYXQiOjE1NDY1MzI3OTEsImV4cCI6MTU0NjYxOTE5MX0.5h-xFqMRzSUsI-LPSrEoq8G9rQiWu3c_FU7vrcsONB0");
+    }
   }
 
 }
