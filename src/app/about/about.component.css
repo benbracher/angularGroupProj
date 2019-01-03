@@ -1,0 +1,22 @@
+.form{
+    background-color: green;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    padding-bottom: 1%;
+}
+
+.jumbotron{
+    margin-top: 2%;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    background-color:green;
+    border: 2px solid black;
+    border-radius: 5px;
+    color:white;
+}
+
+.btn{
+    background-color:grey;
+    border: 2px solid darkgrey;
+}

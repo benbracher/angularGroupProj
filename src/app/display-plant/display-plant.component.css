@@ -1,0 +1,9 @@
+.displayPlant{
+    color: white;
+    background-color: green;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 3%;
+    padding-bottom: 2%;
+    font-family: 'Roboto', 'Arial', sans-serif;
+}
