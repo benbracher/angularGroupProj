@@ -19,10 +19,11 @@ import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './components/login/login.component';
 import { ProductComponent } from './components/product/product.component';
 import { AuthService } from './services/auth.service';
+import { AboutComponent } from './about/about.component';
 
 const routes = [
   // { path: 'home', component: HomeComponent},
-  // { path: 'about', component: AboutComponent},
+  //{ path: 'about', component: AboutComponent},
   { path: 'product', component: ProductComponent},
   { path: 'login', component: LoginComponent},
   
@@ -32,6 +33,7 @@ const routes = [
   declarations: [
     AppComponent,
     HeaderComponent,
+    // AboutComponent,
     LoginComponent,
     ProductComponent,
     DisplayPlantComponent
