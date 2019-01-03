@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
@@ -11,17 +11,19 @@ import {
   MatInputModule
 } from '@angular/material';
 
+import { DisplayPlantComponent } from './display-plant/display-plant.component';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './components/login/login.component';
+import { ProductComponent } from './components/product/product.component';
 import { AuthService } from './services/auth.service';
 
 const routes = [
   // { path: 'home', component: HomeComponent},
   // { path: 'about', component: AboutComponent},
-  // { path: 'product', component: ProductComponent},
+  { path: 'product', component: ProductComponent},
   { path: 'login', component: LoginComponent},
   
 ];
@@ -31,6 +33,8 @@ const routes = [
     AppComponent,
     HeaderComponent,
     LoginComponent,
+    ProductComponent,
+    DisplayPlantComponent
   ],
   imports: [
     BrowserModule,
