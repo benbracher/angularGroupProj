@@ -1,23 +1,55 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 
-import { MatToolbarModule } from '@angular/material';
+import { 
+  MatToolbarModule, 
+  MatButtonModule,
+  MatFormFieldModule,
+  MatInputModule
+} from '@angular/material';
 
+import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
+import { LoginComponent } from './components/login/login.component';
+import { AuthService } from './services/auth.service';
+
+const routes = [
+  // { path: 'home', component: HomeComponent},
+  // { path: 'about', component: AboutComponent},
+  // { path: 'product', component: ProductComponent},
+  { path: 'login', component: LoginComponent},
+  
+];
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    RouterModule,
+    RouterModule.forRoot(routes),
+    ReactiveFormsModule,
     AppRoutingModule,
-    MatToolbarModule
+    MatButtonModule,
+    MatToolbarModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
-  providers: [],
+  providers: [
+    AuthService,
+    HttpClient
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
