@@ -4,10 +4,7 @@ import { Token } from '../models/Token';
 
 const Api_Url = 'https://efa-gardenapp-backend.herokuapp.com/api/auth/login'
 
-@Injectable({
-  providedIn: 'root'
-})
-
+@Injectable()
 export class AuthService {
 
   constructor(private _http: HttpClient) { }
