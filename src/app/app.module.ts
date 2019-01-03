@@ -19,8 +19,11 @@ import { LoginComponent } from './components/login/login.component';
 import { AuthService } from './services/auth.service';
 
 const routes = [
+  // { path: 'home', component: HomeComponent},
+  // { path: 'about', component: AboutComponent},
+  // { path: 'product', component: ProductComponent},
   { path: 'login', component: LoginComponent},
-
+  
 ];
 
 @NgModule({
@@ -31,11 +34,11 @@ const routes = [
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     FormsModule,
     RouterModule,
     RouterModule.forRoot(routes),
-    HttpClientModule,
     ReactiveFormsModule,
     AppRoutingModule,
     MatButtonModule,
