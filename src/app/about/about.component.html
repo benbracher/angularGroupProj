@@ -1,0 +1,81 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<div class="container">
+  <div class="jumbotron">
+    <h1>About Us</h1>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ad ut sint nemo laudantium quidem saepe
+      minus aut harum, ipsam molestias! Delectus, a! Numquam totam magnam illum, distinctio tempora corrupti. Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Perferendis consequuntur voluptates vero minima ea repellat,
+      reiciendis sit, ducimus incidunt autem quos distinctio veniam iste soluta explicabo, ipsum hic! Ea, iure.</p>
+  </div>
+</div>
+
+<!-- <button mat-raised-button (click)="isLinear = !isLinear" id="toggle-linear">
+  {{!isLinear ? 'Enable linear mode' : 'Disable linear mode'}}
+</button>
+<mat-horizontal-stepper [linear]="isLinear" #stepper>
+  <mat-step [stepControl]="firstFormGroup">
+    <form [formGroup]="firstFormGroup">
+      <ng-template matStepLabel>Fill out your name</ng-template>
+      <mat-form-field>
+        <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>Fill out your address</ng-template>
+      <mat-form-field>
+        <input matInput placeholder="Address" formControlName="secondCtrl" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Done</ng-template>
+    You are now done.
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button (click)="stepper.reset()">Reset</button>
+    </div>
+  </mat-step>
+</mat-horizontal-stepper> -->
+<br>
+<hr>
+<br>
+
+<div class="container">
+  <div class="row">
+    <br>
+    <h2> Contact Us</h2>
+    <div class="col-xs-12 col-md-8 col-md-offset-2">
+
+      <form (submit)="onSubmit();" action="https://formspree.io/blbracher@gmail.com" method="POST">
+
+        <h3>Name</h3>
+        <input id="name" type="text" class="form-control" name="name" placeholder="Name" ngModel>
+
+        <h3>Phone</h3>
+        <input id="phone" type="text" class="form-control" name="phone" placeholder="Phone" ngModel>
+
+        <h3>Email</h3>
+        <input id="email" type="text" class="form-control" name="email" placeholder="Email" ngModel>
+
+        <h3>Questions or Comments</h3>
+        <textarea name="paragraph_text" input id="message" type="text" class="form-control" name="message" placeholder="Enter up to 250 characters."
+          maxlength="250" cols="25" rows="10" ngModel></textarea>
+        <br>
+        <br>
+
+        <button type="submit" class="btn btn-md uploadImageButton" id="submit-btn">Send</button>
+      </form>
+    </div>
+  </div>
+  <br>

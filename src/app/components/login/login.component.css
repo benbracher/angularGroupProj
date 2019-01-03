@@ -1,0 +1,19 @@
+.outerLogin {
+    background-color: blue; 
+    height: 95vh;
+    margin-top: 0px !important;
+}
+
+.login{
+    margin: 5%;
+    padding: 8%, 0,0,0;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    color:green;
+    border: 2px solid black;
+}
+
+
+.nav-btn{
+    background-color:green;
+    color: white;
+}
